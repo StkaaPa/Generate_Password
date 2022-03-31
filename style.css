@@ -19,6 +19,7 @@ body{
   width: 400px;
   background: #735D58;
   box-shadow: 0 4px 20px #735D58;
+  border-radius: 1em;
 }
 
 .pw-header{
@@ -42,12 +43,44 @@ body{
   top: 0;
   transform: translate(0, 50%);
   transition: opacity 0.2s ease,transfrom 0.2s ease;
-  -webkit-transition: opacity 0.2s ease,transfrom 0.2s ease;
-  -moz-transition: opacity 0.2s ease,transfrom 0.2s ease;
-  -ms-transition: opacity 0.2s ease,transfrom 0.2s ease;
-  -o-transition: opacity 0.2s ease,transfrom 0.2s ease;
-  -webkit-transform: translate(0, 50%);
-  -moz-transform: translate(0, 50%);
-  -ms-transform: translate(0, 50%);
-  -o-transform: translate(0, 50%);
+  opacity: 0;
+  background-color: #055159;
+  padding: 0.25rem 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 };
+
+.pw:hover button {
+  opacity: 1;
+  transform: translate(0, -80%);
+}
+
+.pw-body{
+  padding: 0 1rem 1 rem 0;
+}
+
+.form-control{
+  color: #D9B9AD;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.75rem 0;
+  padding: 0 1rem;
+  font-size: 1em;
+}
+
+.generate {
+  display: block;
+  background-color: #D9B9AD;
+  color: #055159;
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 1em;
+  margin-top: 1rem;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0 0 1em 1em;
+}
