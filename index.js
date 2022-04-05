@@ -9,9 +9,9 @@ const lowerEl = document.getElementById("lower");
 const symbolEl = document.getElementById("symbol");
 
 const generateEl = document.getElementById("generate");
-const numberEl = document.getElementById("number")
+const numberEl = document.getElementById("number");
 
-const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 const lowerLetters = "abcdefghijklmnopqrstuvwxyz";
 
@@ -59,4 +59,5 @@ function generateX(){
   if(symbolEl.checked){
     xs.push(getSymbol());
   }
+  return xs;
 }
